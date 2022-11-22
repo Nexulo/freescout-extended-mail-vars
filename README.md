@@ -36,3 +36,8 @@ pull request.
 
 If you could use this module, I would appreciate your support.
 [Click here](https://www.buymeacoffee.com/maisen) to donate.
+
+
+## Screenshots
+<img src="https://github.com/maisen20/freescout-extended-mail-vars/blob/main/repo/Screenshot1.png" width=241px height=528px>
+
