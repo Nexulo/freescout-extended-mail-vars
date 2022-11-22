@@ -14,14 +14,14 @@ This module adds more variables to auto reply of a newly received support reques
 ## Installation
 
 1. Download this module and add the folder MaisenExtendetMailVar to /Modules of freescout.
-2. Activate the module via the Modules page in FreeScout.
+2. Activate the module "Maisen's Extendet Mail Vars" via the Modules page in FreeScout.
 
 ## Update
 
 1. Deactivate the module MaisenExtendetMailVar
 2. Delete the module MaisenExtendetMailVar
 3. Download this module and add the folder MaisenExtendetMailVar to /Modules of freescout.
-4. Activate the module via the Modules page in FreeScout.
+4. Activate the module "Maisen's Extendet Mail Vars" via the Modules page in FreeScout.
 
 
 ## Translations
