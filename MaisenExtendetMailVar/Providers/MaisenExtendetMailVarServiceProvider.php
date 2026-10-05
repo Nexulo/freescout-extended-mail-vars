@@ -43,10 +43,9 @@ class MaisenExtendetMailVarServiceProvider extends ServiceProvider
         });
         
         \Eventy::addFilter('mail_vars.replace', function($vars, $data) {
-            if (!empty($data['conversation'])) {
-                $data['conversation']->load(['threads' => function ($query) {
-                    $query->latest('created_at')->first();
-                }]);
+            // An unsaved conversation (e.g. "New Conversation" page) has no id: loading its threads
+            // makes Laravel index an array with null, which throws under PHP 8.5 in FreeScout.
+            if (!empty($data['conversation']) && $data['conversation']->exists) {
                 $first_thread = $data['conversation']->threads()->first();
                 $vars['{%conversation.firstmessage%}'] = ($first_thread) ? $first_thread->body : '';
             }
